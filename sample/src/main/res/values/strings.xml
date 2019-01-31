@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">LightWeightObservables</string>
+    <string name="spend_per_draw">Spend per draw</string>
+    <string name="other">other..</string>
+    <string name="number_of_draws">Number of draws</string>
+    <string name="bonus_text">Cost will double when you play bonus</string>
+</resources>

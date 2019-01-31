@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:state_enabled="false">
+        <shape>
+            <gradient android:angle="0" android:startColor="#8036A3F5" android:endColor="#8035CCF6" />
+            <stroke android:width="@dimen/default_focus_stroke" android:color="#FFF" />
+            <corners android:radius="@dimen/roundbutton_corner_radius" />
+            <padding android:left="@dimen/default_padding" android:top="@dimen/default_padding" android:right="@dimen/default_padding" android:bottom="@dimen/default_padding" />
+        </shape>
+    </item>
+
+    <item android:state_pressed="true" android:state_enabled="true">
+        <shape>
+            <solid android:color="#ff0A69B4" />
+            <corners android:radius="@dimen/roundbutton_corner_radius" />
+            <padding android:left="@dimen/default_padding" android:top="@dimen/default_padding" android:right="@dimen/default_padding" android:bottom="@dimen/default_padding" />
+        </shape>
+    </item>
+
+    <item android:state_focused="true">
+        <shape>
+            <gradient android:angle="0" android:startColor="#36A3F5" android:endColor="#35CCF6" />
+            <stroke android:width="@dimen/default_focus_stroke" android:color="#FFF" />
+            <corners android:radius="@dimen/roundbutton_corner_radius" />
+            <padding android:left="@dimen/default_padding" android:top="@dimen/default_padding" android:right="@dimen/default_padding" android:bottom="@dimen/default_padding" />
+        </shape>
+    </item>
+
+    <item>
+        <shape>
+            <gradient android:angle="0" android:startColor="#36A3F5" android:endColor="#35CCF6" />
+            <corners android:radius="@dimen/roundbutton_corner_radius" />
+            <padding android:left="@dimen/default_padding" android:top="@dimen/default_padding" android:right="@dimen/default_padding" android:bottom="@dimen/default_padding" />
+        </shape>
+    </item>
+</selector>

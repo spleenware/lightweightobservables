@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:paddingTop="8dp"
+    android:paddingBottom="8dp"
+    android:paddingStart="16dp"
+    android:paddingEnd="16dp"
+    android:minWidth="320dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <EditText
+        android:id="@+id/input"
+        android:imeOptions="actionDone"
+        android:inputType="number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:layout_marginTop="4dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/enter_button"
+            style="@style/DefaultButton.TextOnly.AlertDialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:gravity="center"
+            android:text="Enter"
+            android:textAllCaps="true"
+            android:textStyle="bold"
+            android:textColor="@color/app_blue" />
+        <Button
+            android:id="@+id/cancel_button"
+            style="@style/DefaultButton.TextOnly.AlertDialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/enter_button"
+            android:gravity="center"
+            android:text="@android:string/cancel"
+            android:textAllCaps="true"
+            android:textStyle="bold"
+            android:textColor="@color/app_blue" />
+
+    </RelativeLayout>
+</LinearLayout>
