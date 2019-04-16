@@ -1,41 +1,17 @@
-buildscript {
-    repositories {
-        jcenter()
-    }
-    dependencies {
-        classpath 'com.github.dcendents:android-maven-gradle-plugin:1.4.1'
-        classpath 'com.jfrog.bintray.gradle:gradle-bintray-plugin:1.7.3'
-    }
-}
-
 apply plugin: 'com.android.library'
 apply plugin: 'kotlin-android'
 apply plugin: 'com.github.dcendents.android-maven'
-apply plugin: 'com.jfrog.bintray'
+//apply plugin: 'com.jfrog.bintray'
 
-ext {
-    bintrayRepo = 'lightweightobservables'
-    bintrayName = 'lightweightobservables'
-
-    publishedGroupId = 'com.spleenware'
-    libraryName = 'lightweightobservables'
-    artifact = 'lightweightobservables'
-
-    libraryDescription = 'An Android/kotlin library for easily mapping observable data to your UI'
-
-    siteUrl = 'https://github.com/spleenware/lightweightobservables'
-    gitUrl = 'https://github.com/spleenware/lightweightobservables.git'
-
-    libraryVersion = '0.5.0'
-
-    developerId = 'spleenware'
-    developerName = 'Scott Powell'
-    developerEmail = 'admin@spleenware.com'
-
-    licenseName = 'The Apache Software License, Version 2.0'
-    licenseUrl = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
-    allLicenses = ["GPL-2.0"]
+repositories {
+    mavenCentral()
+    google()
+    jcenter()
+    maven { url "https://jitpack.io" }
 }
+
+group = 'com.github.spleenware'
+version = '0.5.0'
 
 android {
     compileSdkVersion 27
@@ -68,5 +44,3 @@ dependencies {
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
 }
-
-apply from: 'https://raw.githubusercontent.com/LissF/JCenter/master/script.gradle'
